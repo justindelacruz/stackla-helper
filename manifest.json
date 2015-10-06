@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Stackla Helper",
+  "description": "Helps editors be more productive on Stackla.",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://*.stackla.com/guzzlefish/admin/allcontent/*", "https://*.stackla.com/guzzlefish/admin/allcontent/*"],
+      "js": ["js/jquery-2.1.4.min.js", "js/previewLinks.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
